@@ -15,7 +15,7 @@ function App() {
         if(event.key === "Enter"){
             fetch(`${Api.base}weather?q=${query}&units=metric&APPID=${Api.key}`)
             .then(response => response.json())
-            .then(data => {setWeather(data); setQuery(''); /* console.log(data) */ console.log(weather);});
+            .then(data => {setWeather(data); setQuery(''); /* console.log(data) */});
         }
     }
 
